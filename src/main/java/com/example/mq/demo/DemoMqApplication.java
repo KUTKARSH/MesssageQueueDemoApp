@@ -17,7 +17,7 @@ public class DemoMqApplication {
 
 	public static final String QUEUE = "play-queue";
 	public static final String EXCHANGE = "play-exchange";
-	public static final String ROUTING_KEY = "red";
+	public static final String ROUTING_KEY = "red"; // it is in fact the binding key
 	
 	@Bean
 	Queue queue() {
