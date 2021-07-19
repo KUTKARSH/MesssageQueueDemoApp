@@ -31,6 +31,6 @@ public class DemoMqApplication {
 	
 	@Bean
 	Binding binding(Queue queue, DirectExchange exchange) {
-		return BindingBuilder.bind(queue).to(exchange).with(ROUTING_KEY);
+		return BindingBuilder.bind(queue).to(exchange).with(ROUTING_KEY); // bind the queue to exchange with binding key
 	}
 }
