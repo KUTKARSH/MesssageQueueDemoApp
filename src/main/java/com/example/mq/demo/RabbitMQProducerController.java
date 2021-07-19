@@ -15,7 +15,7 @@ public class RabbitMQProducerController {
 	@GetMapping(value = "/produced")
 	public String producer() {
 		rabbitTemplate.convertAndSend(DemoMqApplication.EXCHANGE,DemoMqApplication.ROUTING_KEY,
-				"I love Tom Cruise");
+				"I love Tom Cruise"); // pass the exchange, routing key and message, routing key is same as binding key in direct exchange
 		return "Message published";
 	}
 	
